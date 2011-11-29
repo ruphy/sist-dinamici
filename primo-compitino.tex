@@ -19,7 +19,7 @@ $$\dot{x}\ddot{x}$$
 \section{Equazioni del moto}
 
 Un sistema dinamico in generale potrà essere descritto da una forma del tipo:
-$$\bigg\{ \begin{array}{r}
+$$\bigg\{ \begin{array}{l}
 \dot{x} = f(x, y)\\
 \dot{y} = g(x, y)\\
 \end{array}$$
@@ -32,7 +32,7 @@ Sono loro attorno ai quali possono avvenire le orbite (??).
 Analiticamente:
 $$ ( x(t+\tau), y(t+\tau) ) = (x(t), y(t))$$
 Sono curve chiuse sulla quale il campo vettoriale non si annulla.
-Per il teorema di esistenza e unicità non possono esservi allora orbite che non la intersechino.
+Per il teorema di esistenza e unicità non possono esservi allora orbite che la intersechino.
 \paragraph{Orbite asintotiche a punti di equilibrio}
 ``Salvano" l'unicità della soluzione.
 \paragraph{Orbite aperte non asintotiche}
@@ -42,7 +42,7 @@ Il punto che descrive lo stato del sistema le percore senza intersecare altre or
 $$\Phi(x(t), y(t)) = \Phi(x_0, y_0)\ \ \forall t$$
 
 NOTA: se $\Phi \in \mathbb{C}^1$, allora $\Phi$ è una costante del moto per il sistema
-$$\bigg\{ \begin{array}{r}
+$$\bigg\{ \begin{array}{l}
 \dot{x} = f(x, y)\\
 \dot{y} = g(x, y)\\
 \end{array}$$
@@ -50,16 +50,21 @@ se e solo se
 $$f\left(\dfrac{\partial \Phi}{\partial x}\right) + g\left(\dfrac{\partial \Phi}{\partial y}\right) = 0$$
 Questa proposizione serve perché basta tracciare le curve di livello identificandone eventuali singolarità. Ogni curva di livello è un insieme di orbite.
 \subparagraph{Esempio - Equazioni di newton}
-$$\bigg\{ \begin{array}{r}
+$$\bigg\{ \begin{array}{l}
 \dot{x} = v\\
-\dot{y} = F(x)/m\\
+\dot{y} = \dfrac{F(x)}{m}\\
 \end{array}$$
-Flusso (...)
+Flusso (???).
 Tutti i punti di equilibrio sull'asse $x$ hanno $v=0$.
 Punti dell'asse x non di equilibio hanno orbite a tangente verticale.
 
 \paragraph{Sistemi conservativi}
-Un sistema è conservativo se $F(x)$ ammette primitiva $U(x)$ tale che $F(x) = -\dfrac{\partial U}{\partial x}$
+Un sistema è conservativo se $F(x)$ ammette primitiva $U(x)$ tale che $$F(x) = -\dfrac{\partial U}{\partial x}$$ da cui $$m\ddot{x} + U'(x) = 0 \ \ \forall x$$
+Per i sistemi conservativi descritti dalle equazioni di Newton l'energia è una costante del moto:
+$$ E = \dfrac{1}{2} mv^2+U(x)$$
+Fissata una certa energia $E_0$ è possibile il moto solo per $E\geq U(x) = E_0 \Rightarrow E-U(x)\geq E_0$
+
+
 \subsection{Moti periodici}
 \paragraph{Periodo di oscillazione}
 Il periodo di oscillazione (andata e ritorno) tra $x_1$ e $x_2$\footnote{dove $x_1$ e $x_2$ sono i punti sono della radici di $U(x) = E$}, è dato dalla relazione
