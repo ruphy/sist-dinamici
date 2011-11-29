@@ -24,7 +24,7 @@ $$\bigg\{ \begin{array}{l}
 \dot{y} = g(x, y)\\
 \end{array}$$
 
-\subsection{De orbite}
+\subsection{Diagrammi di fase}
 \paragraph{Punti di equilibrio} Analiticamente:
 $$f(x, y) = 0$$ $$g(x, y) = 0$$
 Sono loro attorno ai quali possono avvenire le orbite (??).
@@ -62,7 +62,23 @@ Punti dell'asse x non di equilibio hanno orbite a tangente verticale.
 Un sistema è conservativo se $F(x)$ ammette primitiva $U(x)$ tale che $$F(x) = -\dfrac{\partial U}{\partial x}$$ da cui $$m\ddot{x} + U'(x) = 0 \ \ \forall x$$
 Per i sistemi conservativi descritti dalle equazioni di Newton l'energia è una costante del moto:
 $$ E = \dfrac{1}{2} mv^2+U(x)$$
-Fissata una certa energia $E_0$ è possibile il moto solo per $E\geq U(x) = E_0 \Rightarrow E-U(x)\geq E_0$
+Fissata una certa energia $E_0$ è possibile il moto solo per $E\geq U(x) = E_0$ ovvero $$E-U(x)=E-E_0 = T \geq 0$$
+I casi possibili sono:
+\begin{itemize}
+	\item $\exists x_0: \forall x < x_0,\ U(x) < E_0$ oltre che $\forall x > x_0,\ U(x) > E_0$: allora il punto proviene dall'infinito e ci ritorna; si ha v=0 quando $U(\bar{x}) = E_0$ ma $\dot{v}(\bar{x})$ non è zero, quindi l'accelerazione non è nulla
+	\item Intervallo chiuso se $U(x) \leq E_0 \Rightarrow x \in (a, b) \subset \mathbb{R}$ allora si ha un'orbita periodica chiusa con estremi in cui si inverte il moto.
+	\item Nota: se $a$ o $b$ sono dei punti di massimo relativi di $U(x)$, allora si hanno dei punti singolari: vedi la sezione sulle separatrici subito sotto.
+\end{itemize}
+\paragraph{Buche di potenziale}
+Sono i punti in cui $U(x)$ ha un minimo
+\paragraph{Separatrici}
+In presenza di massimi di $U(x)$, il diagramma di fase è simmetrico rispetto a $x$: $E$ dipende quadraticamente da $v$, e quindi $E(x, v) = E(x, -v)$.
+In particolare, ci saranno due rette che separeranno il diagramma di coefficiente angolare:
+$$y'(x_0) = \pm\sqrt{U''(x_0)}$$
+
+\subsection{Osservazioni sui diagrammi di fase}
+$$y = \pm \sqrt{2(E_0-U(x)}$$
+Se $U(x) \to E_0$, allora $y \to 0$ e si ha una tangente verticale sul diagramma di fase.
 
 
 \subsection{Moti periodici}
