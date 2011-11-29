@@ -1,5 +1,5 @@
 \documentclass[a4paper,12pt]{book}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amssymb, amsmath}
 \setcounter{chapter}{1}
 \newcommand{\ubar}{\underbar}
@@ -75,7 +75,7 @@ Sono i punti in cui $U(x)$ ha un minimo
 \paragraph{Separatrici}
 In presenza di massimi di $U(x)$, il diagramma di fase è simmetrico rispetto a $x$: $E$ dipende quadraticamente da $v$, e quindi $E(x, v) = E(x, -v)$.
 In particolare, ci saranno due rette che separeranno il diagramma di coefficiente angolare:
-$$y'(x_0) = \pm\sqrt{U''(x_0)}$$
+$$y'(x_0) = \pm\sqrt{-U''(x_0)}$$
 
 \subsection{Osservazioni sui diagrammi di fase}
 Se $U(x) \to E_0$ e $U$ allora $y \to 0$, e se $E_0$ non è un massimo relativo di $U(x)$, si ha una tangente verticale sul diagramma di fase.
@@ -83,12 +83,13 @@ Se $U(x) \to E_0$ e $U$ allora $y \to 0$, e se $E_0$ non è un massimo relativo 
 
 \subsection{Moti periodici}
 \paragraph{Periodo di oscillazione}
-Il periodo di oscillazione (andata e ritorno) tra $x_1$ e $x_2$\footnote{dove $x_1$ e $x_2$ sono i punti sono della radici di $U(x) = E$}, è dato dalla relazione
-$$ T(E) = \sqrt{2m}\int_{x_1(E)}^{x_2(E)} \dfrac{dx}{\sqrt{E-U(x)}}$$
+Il periodo di oscillazione (andata e ritorno) tra $x_1$ e $x_2$\footnote{dove $x_1$ e $x_2$ sono le radici di $U(x) = E $ che delimitano l'orbita chiusa! }, è dato dalla relazione
+$$ T(E) = \sqrt{2}\int_{x_1(E)}^{x_2(E)} \dfrac{dx}{\sqrt{E-U(x)}}$$
 
 \subsection{Come risolvere un esercizio}
 Facciamo innanzi tutto qualche considerazione di base. Per prima cosa, ricordiamo che:
-$$y = \pm \sqrt{2(E_0-U(x)}$$
+$$y = \pm \sqrt{2(E_0-U(x))}$$
+
 
 
 
@@ -104,7 +105,7 @@ $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partia
 \subsection{Come risolvere un esercizio}
 
 \subsection{Ricorda}
-\paragraph{Teorema di Koenig}
+\paragraph{Teorema di K$\ddot{o}$nig}
 
 \paragraph{Teorema di Huygens-Steiner}
 Ricorda: non puoi usarlo se: (nota di lorenzoni)
@@ -113,6 +114,16 @@ Ricorda: non puoi usarlo se: (nota di lorenzoni)
 \paragraph{Regola di Cramer}
 \paragraph{Autovalori e autovettori}
 
+\section{Sistemi lineari}
+\paragraph{Punti di Equilibrio}
+
+\section{Teoremi generali}
+\paragraph{}
+$$
+\vec{P} = m\vec{v}$$
+$$
+\vec{L_Q} = (x-x_Q)\wedge P
+$$
 \end{document}
 
 
