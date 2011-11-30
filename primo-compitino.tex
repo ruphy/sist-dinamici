@@ -1,5 +1,5 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amssymb, amsmath}
 \newcommand{\ubar}{\underbar}
 \usepackage{fullpage}
@@ -228,8 +228,32 @@ $E=T+U$ sostituisco in coordinate $\dot{\phi^{\alpha}}$ e trovo $E=\frac{1}{2}\d
 \paragraph{Autovalori e autovettori}
 
 \section{Sistemi lineari}
-\paragraph{Punti di Equilibrio}
-
+\paragraph{Linearizzazione di un sistema}
+E' dato un sistema lineare ed un suo punto di equilibrio $(x_0,y_0)$ (cioè tale che $f(x_0,y_0)=0=g(x_0,y_0)$ (*))
+$$\bigg\{ \begin{array}{l}
+\dot{x} = f(x,y)\\
+\dot{y} = g(x,y)\\
+\end{array}$$
+Cambio di variabili:
+$$\bigg\{ \begin{array}{l}
+\xi = x-x_0\\
+\eta = y-y_o\\
+\end{array}$$
+Riscriviamo il sistema con le nuove variabili e scriviamo lo sviluppo di Taylor di f e g fino al I ordine, ricordando (*).
+$$\bigg\{ \begin{array}{l}
+\dot{\xi} = \partial_xf(x_0,y_0)\xi+\partial_yf(x_0,y_0)\eta + o(\sqrt{\xi^2+\eta^2})\\
+\dot{\eta} = \partial_xg(x_0,y_0)\xi+\partial_yg(x_0,y_0)\eta + o(\sqrt{\xi^2+\eta^2})\\
+\end{array}$$ 
+Dal precedente otteniamo il sistema lineare: 
+$$\begin{bmatrix}\dot{\xi} \\ \dot{\eta} \end{bmatrix} 
+= \begin{bmatrix} \partial_xf(x_0,y_0) & \partial_yf(x_0,y_0) \\ \partial_xg(x_0,y_0) & \partial_yg(x_0,y_0) \end{bmatrix} \begin{bmatrix}\xi \\ \eta \end{bmatrix}
+$$
+\paragraph{Studio di un generico sistema lineare}
+Un generico sistema lineare, scritto in forma matriciale:
+$$\begin{bmatrix}\dot{x} \\ \dot{y} \end{bmatrix} 
+=  \underbrace{\begin{bmatrix} a & b \\ c & d \end{bmatrix}}_\text{A}  \begin{bmatrix}x \\ y \end{bmatrix}
+$$
+Polinomio caratteristico $P_A(\lambda) = \lambda^2-tr(A)\lambda+det(A)$
 \section{Teoremi generali}
 \paragraph{}
 $$
