@@ -88,7 +88,8 @@ Se $U(x) \to E_0$ e $U$ allora $y \to 0$, e se $E_0$ non è un massimo relativo 
 Il periodo di oscillazione (andata e ritorno) tra $x_1$ e $x_2$\footnote{dove $x_1$ e $x_2$ sono le radici di $U(x) = E $ che delimitano l'orbita chiusa! }, è dato dalla relazione
 $$ T(E) = \sqrt{2}\int_{x_1(E)}^{x_2(E)} \dfrac{dx}{\sqrt{E-U(x)}}$$
 \subparagraph{Oscillatore armonico}
-
+Ha un'energia pari a
+$$ E = \dfrac{1}{2} m \dot{\bar{x}}^2 + \dfrac{U''(\bar{x})}{2} (x-\bar{x})$$
 \subsection{Come risolvere un esercizio}
 Facciamo innanzi tutto qualche considerazione di base. Per prima cosa, ricordiamo che:
 $$y = \pm \sqrt{2(E_0-U(x))}$$
@@ -107,6 +108,7 @@ A questo punto si comincia con l'esercizio di disegno vero e proprio:
  \item Orbite chiuse:
  \begin{itemize}
   \item ...
+  \item Posso calcolare periodo e pulsazione di piccole oscillazioni: $$\omega = \sqrt{U''(x)\over m};\ \ \ T = 2\pi\sqrt{m \over U''(x)}$$
  \end{itemize}
  \item Orbite aperte:
  \begin{itemize}
@@ -114,7 +116,7 @@ A questo punto si comincia con l'esercizio di disegno vero e proprio:
  \end{itemize}
  \item Casi particolari:
  \begin{itemize}
-   \item Intorno ai punti di massimo ci sarà un'orbita in cui il grafico incontra l'asse $x$ (supponiamo, ad esempio, nel punto $(x_0, 0)$), arrivando a tangere le rette di equazione $$y = \pm\sqrt{U''(x_0)}(x-x_0)$$
+   \item Intorno ai punti di massimo ci sarà un'orbita in cui il grafico incontra l'asse $x$ (supponiamo, ad esempio, nel punto $(x_0, 0)$), arrivando a tangere le rette di equazione $$y = \pm\sqrt{-\dfrac{U''(x_0)}{m}}(x-x_0)$$
  \end{itemize}
 \end{itemize}
 \paragraph{Punti di equilibrio}
@@ -126,9 +128,22 @@ y(t) = 0\\
 \subparagraph{Equilibrio stabile}
 \subparagraph{Equilibrio instabile}
 
-
+\paragraph{Calcolo del tempo di raggiungimento di un punto}
+Bisogna usare la definizione (SCRIVI).
+\subparagraph{Punti non stazionari}
+Sia (ad esempio): $U'(x_0) = A > 0$, il punto non è dunque critico.
+$$t(x_0) = \int_x^{x_0} \dfrac{d\tilde{x}}{\sqrt{2}A\sqrt{|x-x_0|}} < +\infty$$
+dunque, finché non ho punti stazionari, posso raggiungerli in tempi finiti.
+\subparagraph{Orbite chiuse}
+Se E è un'orbita chiusa (con estremi $x_1$ e $x_2$)
+$$ T(E) = \sqrt{2}\int_{x_1(E)}^{x_2(E)} \dfrac{dx}{\sqrt{E-U(x)}}$$
+\subparagraph{Punti stazionari}
+Sia $p$ un massimo.
+Allora
+$$t(p) = \lim_{x\to p} \int_{x_0}^x \dfrac{d\tilde{x}}{\sqrt{E_2 - U(\tilde{x})}} = +\infty$$
 
 \subsection{Ricorda}
+
 
 
 \section{Meccanica Lagrangiana}
@@ -144,6 +159,19 @@ $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partia
 
 \paragraph{Teorema di Huygens-Steiner}
 Ricorda: non puoi usarlo se: (nota di lorenzoni)
+\paragraph{Funzini di Lyapunov}
+Siano
+$$\bigg\{ \begin{array}{l}
+\dot{x} = f(x,y)\\
+\dot{y} = g(x,y)\\
+\end{array}$$
+E sia $(x_0, y_0)$ t.c.
+$$\bigg\{ \begin{array}{l}
+f(x_0,y_0) = 0\\
+g(x_0,y_0) = 0\\
+\end{array}$$
+
+
 \section{Marco}	
 \begin{itemize}
 
