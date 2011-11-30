@@ -110,6 +110,50 @@ $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partia
 
 \paragraph{Teorema di Huygens-Steiner}
 Ricorda: non puoi usarlo se: (nota di lorenzoni)
+\section{Marco}	
+\begin{itemize}
+
+
+\item Se scriviamo $T=T_2+T_1+T_0$ e quindi $E=T_2-T_0+V$ \\
+POTENZIALE CENTRALE NEL PIANO \\
+Quando sappiamo che il momento angolare è costante otteniamo:
+\begin{displaymath}
+m\ddot{r}=\frac{l^2}{mr^3}-\frac{dv}{dr}
+\end{displaymath}
+
+DESCRIVE L'EVOLUZIONE DEL RAGGIO.\\
+E' l'equazione di un punto materiale in movimento sotto l'azione del potenziale efficace $V^*(r)=V(r)+\frac{l^2}{mr^2}$ dove l'ultimo termine è il potenziale centrifugo
+\begin{displaymath}
+E=\frac{1}{2}mr^2 + V^*(r)
+\end{displaymath}
+DIAGRAMMA DI FASE DI UN POTENZIALE RADIALE
+\item $E_{min}=V^*(F)$ corrisponde a $r(t)=\overline{r}$ costante
+\item $E<0$ STATI LEGATI: corrisponde a un moto confinato a distanza finita dal centro
+\item $E=0,\ \dot{r}\to0$, per $r\to\infty$
+\item $E>0$ STATI DI SCATTERING: per $r\to\infty$, $\dot{r}\to\sqrt{\frac{2E}{m}}$, proviene dall'infinito e ci ritorna
+\end{itemize}
+\newtheorem{prop}{Proposizione}[section]
+
+\begin{prop}
+In qualsiasi campo di fase centrale verificati i seguenti fatti:
+\begin{itemize} 
+\item $\vec{L}$ è costante del moto
+\item La velocità areolare è costante, ossia $\frac{dA}{dt}=cost$
+
+\end{itemize}
+ 
+
+\end{prop}
+\paragraph{Osservazione} Di conseguenza al teorema si ha che $mp^2\dot{\theta}$ è un integrale primo
+\paragraph{Orbite degli stati legati}
+L'orbita è contenuta in una corona circolare compresa tra i raggi $\rho_{min}$ e $\rho_{max}$ e al crescere di $\theta$ oscilla tra i due estremi. Si avrà un'orbita a \textbf{ rosetta}. E' periodica se e solo se $\frac{\Delta\theta}{2\pi}\in\mathbb{Q}$
+\paragraph{Energia cinetica in coordinate sferiche}
+\begin{displaymath}
+T=\frac{1}{2}ml^2(\dot{\theta^2}+\sin^2\theta \cdot \dot{\phi^2})
+\end{displaymath}
+$P_{\phi}$ si conserva se e solo se $\vec{L_z}$ si conserva, ove $\vec{L_z}=mr^2\sin^2\theta\cdot\dot{\phi}$
+\paragraph{Integrazione per quadrature}
+$E=T+U$ sostituisco in coordinate $\dot{\phi^{\alpha}}$ e trovo $E=\frac{1}{2}\dot{\theta^2}U^{\alpha}(\theta)$
 
 \section{Altro}
 \paragraph{Regola di Cramer}
@@ -125,6 +169,9 @@ $$
 $$
 \vec{L_Q} = (x-x_Q)\wedge P
 $$
+
+
+
 \end{document}
 
 
