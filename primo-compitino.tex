@@ -143,8 +143,25 @@ Allora
 $$t(p) = \lim_{x\to p} \int_{x_0}^x \dfrac{d\tilde{x}}{\sqrt{E_2 - U(\tilde{x})}} = +\infty$$
 Dunque, se ho energia $E = U(p)$ non raggiungerò $p$ in un tempo finito.
 
+\paragraph{Sistemi perturbati}
+Si cerca una funzione di Lyapunov (v. sotto) per il sistema non perturbato (ad esempio: l'energia) e si guarda se va bene anche per quello perturbato. Si può anche scegliere $L$ tale che $$\dfrac{\partial L}{\partial x}\dot{x} + \dfrac{\partial L}{\partial y}\dot{y} = 0 $$ e vedere se va bene.
+
 \subsection{Ricorda}
 
+\paragraph{Funzioni di Lyapunov}
+Siano
+$$\bigg\{ \begin{array}{l}
+\dot{x} = f(x,y)\\
+\dot{y} = g(x,y)\\
+\end{array}$$
+E sia $(x_0, y_0)$ t.c.
+$$\bigg\{ \begin{array}{l}
+f(x_0,y_0) = 0\\
+g(x_0,y_0) = 0\\
+\end{array}$$
+Allora se
+$$ \dfrac{dL}{dt} = \dfrac{\partial L}{\partial x}\dot{x} + \dfrac{\partial L}{\partial y}\dot{y} \leq 0 $$
+(ovvero $L(x, y)$ ha minimo stretto in $(x_0, y_0)$), si ha che $(x_0,y_0)$ è un punto di equilibrio stabile.
 
 
 \section{Meccanica Lagrangiana}
@@ -160,18 +177,6 @@ $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partia
 
 \paragraph{Teorema di Huygens-Steiner}
 Ricorda: non puoi usarlo se: (nota di lorenzoni)
-\paragraph{Funzini di Lyapunov}
-Siano
-$$\bigg\{ \begin{array}{l}
-\dot{x} = f(x,y)\\
-\dot{y} = g(x,y)\\
-\end{array}$$
-E sia $(x_0, y_0)$ t.c.
-$$\bigg\{ \begin{array}{l}
-f(x_0,y_0) = 0\\
-g(x_0,y_0) = 0\\
-\end{array}$$
-
 
 \section{Marco}	
 \begin{itemize}
