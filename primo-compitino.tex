@@ -206,9 +206,17 @@ Poi, se $E_0$ è l'energia corrispondente a $U(x_m)$ allora $$\lim_{E\to E_0} T(
 \subsection{Definizioni principali}
 La funzione di Lagrange è la funzione:
 $$ L(q, \dot{q}, t) = T - U $$
+Alcune proprietà:
+\begin{itemize}
+ \item La lagrangiana è invariante rispetto a un cambio di coordinate.
+ \item L'energia cinetica si può sempre scrivere come $[\dot{q}_j]\cdot G\cdot[q_j]$ con $G$ matrice simmetrica.
+\end{itemize}
+
 \paragraph{Equazioni di Eulero-Lagrange}
 $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partial q_i}$$
-
+Nota: per un sistema non conservativo posso solo dire che
+$$\frac{d}{dt}\frac{\partial T}{\partial \dot{q}_a} - \frac{\partial T}{\partial q_a} = Q_j$$
+e in generale $Q_j \neq 0$. $Q_j$ viene detta forza generalizzata.
 \subsection{Vincoli}
 Ci sono diversi tipi di vincoli: olonomo ($f(x_1,...,x_n, t)=0$), fisso (non dipende dal tempo), mobile (dipende dal tempo).
 \paragraph{Velocità compatibile con un vincolo}
@@ -300,7 +308,7 @@ In qualsiasi campo di fase centrale verificati i seguenti fatti:
 \end{prop}
 \paragraph{Osservazione} Di conseguenza al teorema si ha che $mp^2\dot{\theta}$ è un integrale primo
 \paragraph{Orbite degli stati legati}
-L'orbita è contenuta in una corona circolare compresa tra i raggi $\rho_{min}$ e $\rho_{max}$ e al crescere di $\theta$ oscilla tra i due estremi. Si avrà un'orbita a \textbf{ rosetta}. E' periodica se e solo se $\frac{\Delta\theta}{2\pi}\in\mathbb{Q}$
+L'orbita è contenuta in una corona circolare compresa tra i raggi $\rho_{min}$ e $\rho_{max}$ e al crescere di $\theta$ oscilla tra i due estremi. Si avrà un'orbita a \textbf{rosetta}. E' periodica se e solo se $\frac{\Delta\theta}{2\pi}\in\mathbb{Q}$
 \paragraph{Energia cinetica in coordinate sferiche}
 \begin{displaymath}
 T=\frac{1}{2}ml^2(\dot{\theta^2}+\sin^2\theta \cdot \dot{\phi^2})
