@@ -205,18 +205,51 @@ Poi, se $E_0$ è l'energia corrispondente a $U(x_m)$ allora $$\lim_{E\to E_0} T(
 \section{Meccanica Lagrangiana}
 \subsection{Definizioni principali}
 La funzione di Lagrange è la funzione:
-$$ L = T - U $$
-e soddisfa la relazione
+$$ L(q, \dot{q}, t) = T - U $$
+\paragraph{Equazioni di Eulero-Lagrange}
 $${d \over dt}\dfrac{\partial L}{\partial\dot{q}_i} = \dfrac{\partial L}{\partial q_i}$$
+
+\subsection{Vincoli}
+Ci sono diversi tipi di vincoli: olonomo ($f(x_1,...,x_n, t)=0$), fisso (non dipende dal tempo), mobile (dipende dal tempo).
+\paragraph{Velocità compatibile con un vincolo}
+Una velocità compatibile con un vincolo soddisfa le seguenti $n$ equazioni:
+$$\dot{x}_\alpha = \sum_{j=1}^d \frac{\partial x_\alpha}{\partial q_j} \dot{q}_j$$
+ove $d$ è il numero di coordinate libere, e $\alpha={1,...,n}$ le particelle.
+\paragraph{Reazioni vincolari}
+Dato un vincolo, è possibile calcolare le reazioni vincolari.
+\begin{itemize}
+ \item $m\ddot{\vec{x}}-\vec{F} = \vec{\Phi}$
+ \item $\forall j \in \{1,...,d\}\ (m\ddot{\vec{x}}-\vec{F})\cdot \dfrac{\partial x}{\partial q_j} = \vec{\Phi}\dfrac{\partial x}{\partial q_j}$
+ \item $\vec{\Phi}\cdot\dfrac{\partial x}{\partial q_j}=0$
+ \item Calcolo $\ddot{\theta}$ (???)
+ \item Sostituisco.
+\end{itemize}
+
 \subsection{Come risolvere un esercizio}
 
 \subsection{Ricorda}
+
+\section{Teoremi generali}
+\subsection{Teoremi più importanti}
 \paragraph{Teorema di Koenig}
 
 \paragraph{Teorema di Huygens-Steiner}
 Ricorda: non puoi usarlo se: (nota di lorenzoni)
 
-\section{Marco}	
+\subsection{Altro}
+$$\vec{P}=m\vec{v} $$
+$$ \vec{L}_q = (x-x_q)\times P$$
+$$\vec{N}_q = (x-x_q)\times F $$
+$$ T = \frac{1}{2} m|\vec{v}|^2 $$
+$$ \dot{\tau} = \pi = \vec{F}\cdot\vec{v}$$
+$$ \vec{F} = -\nabla U(x)$$
+$$E = T+U\ \text{è una costante del moto} $$
+$$\text{Baricentro: } \vec{x}_b = \dfrac{\sum_{v=1}^n m_j \vec{x}_j}{\sum_{v=1}^n m_j} $$
+\paragraph{Equazioni cardinali}
+$$ R^{(est)} = \sum F_i = \frac{d\vec{p}_{cm}}{dt}$$
+$$ N_q^{(est)} = \sum_j (\vec{x}_j-\vec{x}_q)\times \vec{F}_j^{(est)} $$
+$$ \frac{d\vec{L}_q}{dt}=\vec{N}^{(est)}-\vec{v}_q\times\vec{p}$$
+\section{Marco}
 \begin{itemize}
 
 
