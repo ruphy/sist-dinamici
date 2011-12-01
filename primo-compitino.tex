@@ -225,9 +225,24 @@ Dato un vincolo, è possibile calcolare le reazioni vincolari.
  \item Sostituisco.
 \end{itemize}
 
+\paragraph{Vincoli posizionali mobili}
+Le velocità si calcolano
+$$
+\dot{x}^i = \frac{\partial x^i}{\partial t} + \sum_{a=1}^d \frac{\partial x^i}{\partial q^a} \dot{q}^a
+$$
+Una \textbf{velocità virtuale} è una velocità che non è possibile se il vincolo dipende da $t$.
+
+\paragraph{Forma dell'equazione di EL in presenza di vincoli}
+$$\dfrac{d}{dt}L(q, \dot{q}, t) = \frac{\partial L}{\partial t} + \sum_{b=1}^d \frac{\partial L}{\partial q_b}\dot{q}_b + \sum_{b=1}^d \frac{\partial x^i}{\partial \dot{q}_b} \ddot{q}_b$$
+
 \subsection{Come risolvere un esercizio}
 
 \subsection{Ricorda}
+
+\paragraph{Ricondursi al diagramma di fase}
+Se trovo $\ddot{z} = -F_z$ posso calcolare il \textbf{potenziale efficace}\footnote{whatever it means} e quindi $\ddot{x} = -\dfrac{\partial U}{\partial z}$. Quindi si ottiene che $E = \frac{1}{2}\dot{z}^2 + U_{eff}$
+Si calcolano quindi i moti possibili e si vede se $z$ aumenta o diminuisce o rimane costante.
+
 
 \section{Teoremi generali}
 \subsection{Teoremi più importanti}
