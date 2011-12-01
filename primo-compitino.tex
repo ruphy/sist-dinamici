@@ -139,26 +139,18 @@ A questo punto si comincia con l'esercizio di disegno vero e proprio:
  \end{itemize}
 \end{itemize}
 
-\paragraph{Punti di equilibr}
-Si possono utilizzare diversi metodi per il calcolo dei punti di equilbirio:
-Linearizzo il sistema:
+\paragraph{Punti di equilibrio}
+Si possono utilizzare diversi metodi per il calcolo dei punti di equilbirio. Il più semplice è qui illustrato.
+Per prima cosa linearizzo il sistema:
 
-$$
-\begin{bmatrix}
- \dot{\xi} \\ \dot{\eta}
-\end{bmatrix}
-= 
-\begin{bmatrix}
- \dfrac{\partial f}{\partial x} (x_0, y_0) & \dfrac{\partial f}{\partial y} (x_0, y_0) \\
- \dfrac{\partial g}{\partial x} (x_0, y_0) & \dfrac{\partial g}{\partial y} (x_0, y_0)
-\end{bmatrix}
-\begin{bmatrix}
- \xi \\ \eta
-\end{bmatrix}
-$$
+$$\begin{bmatrix}\dot{\xi} \\ \dot{\eta} \end{bmatrix} 
+= \begin{bmatrix} \partial_xf(x_0,y_0) & \partial_yf(x_0,y_0) \\ \partial_xg(x_0,y_0) & \partial_yg(x_0,y_0) \end{bmatrix} \begin{bmatrix}\xi \\ \eta \end{bmatrix}$$
 
-\paragraph{Calcolo del tempo di raggiungimento di un punto}
+A questo punto posso calcolare gli autovalori di questo sistema. Se gli autovalori di questo sistema hanno parte reale positiva, il sistema originario è instabile. Viceversa, se hanno parte reale negativa, allora il sistema è stabile in quel punto.
+
+\paragraph{Calcolo del tempo di raggiungimento di una posizione arbitraria}
 Bisogna usare la definizione (SCRIVI).
+In particolare abbiamo i casi.
 \subparagraph{Punti non stazionari}
 Sia (ad esempio): $U'(x_0) = A > 0$, il punto non è dunque critico.
 $$t(x_0) = \int_x^{x_0} \dfrac{d\tilde{x}}{\sqrt{2}A\sqrt{|x-x_0|}} < +\infty$$
@@ -194,6 +186,12 @@ g(x_0,y_0) = 0\\
 Allora se
 $$ \dfrac{dL}{dt} = \dfrac{\partial L}{\partial x}\dot{x} + \dfrac{\partial L}{\partial y}\dot{y} \leq 0 $$
 (ovvero $L(x, y)$ ha minimo stretto in $(x_0, y_0)$), si ha che $(x_0,y_0)$ è un punto di equilibrio stabile.
+
+\paragraph{Teoremi utili}
+$$T(E) = \dfrac{d}{dt}S(E)$$
+dove $S(E)$ è l'area dell'orbita chiusa periodica.
+
+Poi, se $E_0$ è l'energia corrispondente a $U(x_m)$ allora $$\lim_{E\to E_0} T(E) = \dfrac{2\pi}{\sqrt{U''(x_m)}}$$
 
 
 \section{Meccanica Lagrangiana}
