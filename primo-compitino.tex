@@ -3,6 +3,9 @@
 \usepackage{amssymb, amsmath}
 \newcommand{\ubar}{\underbar}
 \usepackage{fullpage}
+\usepackage{multirow}
+\usepackage{footnote}
+\makesavenoteenv { tabular }
 
 \begin{document}
 \begin{titlepage}
@@ -347,7 +350,24 @@ Un generico sistema lineare, scritto in forma matriciale:
 $$\begin{bmatrix}\dot{x} \\ \dot{y} \end{bmatrix} 
 =  \underbrace{\begin{bmatrix} a & b \\ c & d \end{bmatrix}}_\text{A}  \begin{bmatrix}x \\ y \end{bmatrix}
 $$
-Polinomio caratteristico $P_A(\lambda) = \lambda^2-tr(A)\lambda+det(A)$
+Cerchiamo gli autovalori\footnote{$P_A(\lambda) = \lambda^2-tr(A)\lambda+det(A) , P_A(\lambda)=0 $} $\lambda_1,\lambda_2$ (con $\lambda_1<\lambda_2$) della matrice A. Riassumiamo nella tabella la stabilità del sistema in base agli autovalori. E' escluso il caso di autovalori reali coincidenti:
+\begin{center}
+\begin{savenotes}
+\begin{tabular}{l|l|l}
+  & Autovalori & Comportamento del sistema \\
+\hline
+\multirow{4}{*}{Reali} & $\lambda_1,\lambda_2 <0  $ & nodo stabile\\
+& $\lambda_1,\lambda_2 >0  $ & nodo instabile\\
+& $\lambda_1< 0 <\lambda_2$  & punto di sella\\
+& $\lambda_i=0$ $\lambda_j \neq 0$  & equilibrio instabile \footnote{Manca un nome proprio per questa configurazione; In ogni caso, l'origine, è un punto di equilibrio instabile.}\\
+\hline
+\multirow{3}{*}{Complessi\footnote{sempre coniugati in quanto A è matrice reale. Ne segue: $\Re(\lambda_1)=\Re(\lambda_2) =: \mu$ }} & $\mu < 0  $ & fuoco stabile\\
+& $\mu > 0  $ & fuoco instabile\\
+& $\mu = 0  $ & centro\\
+\end{tabular}
+\end{savenotes}
+\end{center}
+
 \section{Teoremi generali}
 \paragraph{}
 $$
